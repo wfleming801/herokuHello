@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  "Hello, world"
-  "Heroku"
- "This is a real test"
+   File.open('weather.dat').each_line { |s|
+	puts s	
+   }
 end
